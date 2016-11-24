@@ -1,0 +1,22 @@
+Recursion:
+
+1. Recursion means calling the same function from within itself. It makes use of the call stack. Any loop can be written using recursion and vice versa.
+
+2. Base case helps identify when we need to stop recursion. If we don't have it, we could go on recursing infinitely.
+
+Graphs:
+
+1. Graphs are like trees, except they can contain loops ("cycles").
+Also, the relationships can be directed or non-directed.
+
+2. In a graph, a node can have multiple parents, unlike a tree.
+Graphs can contain cycles, unlike a tree.
+Graphs do not have any hierarchy, whereas trees do. 
+The edges can have weightage in a graph, there is no such thing in trees.
+All trees are graphs, but not all graphs are trees.
+
+3. To visualize money transactions and flow of money within a network, we can use graphs.
+State machines in chip designing are graphs.
+They are used to model how a particular feature would behave, go from one state to another if certain conditions are met. As the link below shows:
+
+https://www.visual-paradigm.com/VPGallery/diagrams/State.html
