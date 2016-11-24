@@ -93,13 +93,29 @@ def num_nodes(tree):
         6
     """
 
+    # DFS implementation
     if not tree.children:
         return 1
 
     count = 1    
     for child in tree.children:
         count = count + num_nodes(child)
-    return count     
+    return count  
+
+
+
+# BFS implementation
+def BFS_count(children_list, count):
+
+    if not children_list:
+        return count
+
+    node = children_list.pop(0)
+    return BFS_count(children_list + node.children,count + 1)    
+
+
+
+
 
 #####################################################################
 # END OF ASSIGNMENT: You can ignore everything below.
